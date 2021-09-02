@@ -24,6 +24,13 @@ function lower(str) {
 
 const updateAnimal = (arr, callback) => {
   // Solution code here...
+
+
+  let newNum = arr.map(e => upper(e))
+  return newNum
+
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,6 +43,7 @@ For example: 'Cat' would come before 'apple'
 
 const sortNames = (arr) => {
   // Solution code here...
+  return arr.sort()   
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,6 +56,19 @@ HINT: Beware... JS default is "Lexical" ordering.
 
 const sortNumbers = (arr) => {
   // Solution code here...
+  
+  arr.sort(
+    (num1,num2) => {
+      if (num1 < num2) {
+        return -1        
+      }
+      if (num1 > num2) {
+        return 1        
+      }
+      return 0
+    }
+  )
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,6 +81,19 @@ HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 
 const sortBackwards = (arr) => {
   // Solution code here...
+
+  arr.sort(
+    (num1,num2) => {
+      if (num1 < num2) {
+        return 1        
+      }
+      if (num1 > num2) {
+        return -1        
+      }
+      return 0
+    }
+  )
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,6 +108,7 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
+  return arr.sort()  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -91,6 +126,18 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+  arr.sort(
+    (number1,number2) => {
+      if (number1.price < number2.price) {
+        return -1        
+      }
+      if (number1.price > number2.price) {
+        return 1        
+      }
+      return 0
+    }
+  )
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
