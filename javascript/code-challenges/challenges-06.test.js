@@ -3,7 +3,8 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function named getNames that, given an array of people objects, 
+Write a function named getNames that, 
+given an array of people objects, 
 uses map to return an array of names reversed.
 
 For example:
@@ -25,33 +26,39 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  a1=[{
-    name: 'lloyd',
-    age: 32,
-    shoeSize: 12
-  }]
+var newvalue = arr.map(data=> {
 
-  a2=a1
+return (data.name).split('').reverse().join('');
 
-  console.log(a1);
-  console.log(a2);
+}) 
+return newvalue;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
+Write a function that appends 
+' The end.' to a string,
+ and returns the modified string. 
+ The original source string should not be modified.
 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
   // Solution code here...
+let news2=str + ' The end.';
+  // let newstring =str.concat(' The end.');
+  // .concat('The end.');
+   return news2;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function that accepts an array and copies the first element to the end of the array. The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
+Write a function that accepts an array and copies the first element to the end of the array. 
+The change should be reflected in the source array that was passed in to the function. 
+That is, the function should modify the array 'in place'.
 
 Do not use a return statement.
 
@@ -63,25 +70,33 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
+  let newarr =arr.splice(arr.length, 0, arr[0]);
+  return newarr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
+Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. 
+The value of the yearBorn property should be the integer that was passed in.
 
-The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
+The change should be reflected in the source object that was passed in to the function.
+ That is, the function should modify the object 'in place'.
 
 Do not use a return statement.
 
 For example:
 const octavia = { fullName: 'Octavia Estelle Butler' };
 addBirthYearProperty(octavia, 1947);
-console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
+console.log(a)   prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+  let NEWResult = obj.fullName + year['yearBorn']
+  console.log( NEWResult)
+
 };
 
 /* ------------------------------------------------------------------------------------------------
