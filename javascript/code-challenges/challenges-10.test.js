@@ -3,18 +3,24 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function named returnTen, takes in a string and uses split and splice to return the last 10 characters from that string as elements of an array.
+Write a function named returnTen, 
+takes in a string and 
+uses split and splice to return the last 10 
+characters from that string as elements of an array.
 
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
   // Solution code here...
+  let stringMustbeReturn = substr(str.length - 5); 
+  return stringMustbeReturn
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named findMax that takes in a matrix of positive numbers and returns the number with the highest value.
+Write a function named findMax that takes in a matrix of positive numbers 
+and returns the number with the highest value.
 
 For example:
 [
@@ -27,6 +33,21 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+
+let i;
+       
+  // Initialize maximum element
+  let max = matrix[0];
+
+  // Traverse array elements 
+  // from second and compare
+  // every element with current max 
+  for (i = 1; i < matrix.length; i++) {
+      if (matrix[i] > max)
+          max = matrix[i];
+  }
+   
+return max;
 };
 
 /* ------------------------------------------------------------------------------------------------
