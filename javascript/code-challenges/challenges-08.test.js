@@ -6,7 +6,8 @@ CHALLENGE 1 - Review
 
 Use the characters data below for all of the challenges except challenge 2 and 3.
 
-Write a function named sortByChildren that sorts the characters below by the number of children in each house (fewest to most). If a house has the same number of children, sort alphabetically by house name.
+Write a function named sortByChildren that sorts the characters below by the number of children in each house (fewest to most).
+If a house has the same number of children, sort alphabetically by house name.
 
 ------------------------------------------------------------------------------------------------ */
 let characters = [
