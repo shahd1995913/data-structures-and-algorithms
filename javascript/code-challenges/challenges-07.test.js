@@ -3,7 +3,9 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function called sortStarWarsCharacters that sorts the characters in the starWarsPeople array by height from tallest to shortest.
+Write a function called sortStarWarsCharacters
+ that sorts the characters in the starWarsPeople
+  array by height from tallest to shortest.
 ------------------------------------------------------------------------------------------------ */
 
 let starWarsPeople = [
@@ -25,20 +27,19 @@ let starWarsPeople = [
 ];
 
 const sortStarWarsCharacters = (starWarsArr) => {
-  // Solution code here...
- let m = starWarsPeople.name + starWarsPeople.height + starWarsPeople.eye_color
- return m ;
-
+return starWarsArr.sort()
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index. 
+Write a function named removeThree that takes an index and an array. 
+The function should removes three items in the array starting with the value at the index. 
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
-  // Solution code here...
+  arr.splice(idx,3)
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,7 +49,8 @@ Write a function named joinArray that takes an array and joins all of the elemen
 ------------------------------------------------------------------------------------------------ */
 
 const joinArray = (arr) => {
-  // Solution code here...
+  let newArray = arr.join(' ')
+  return newArray
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -79,7 +81,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
-  // Solution code here...
+  return arr.split('')
 };
 
 
