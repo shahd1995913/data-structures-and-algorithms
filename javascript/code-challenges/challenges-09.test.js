@@ -142,8 +142,34 @@ describe('Testing challenge 4', () => {
     expect(updateNumbers(startingObj).includes('Grace Hopper: 222-303-5938')).toBe(true);
   });
 });
-const updateNumbers = (obj) => {
-  // Solution code here...
+const updateNumbers = (object) => {
+
+  const Array_TheKey =Object.keys(object)
+
+  let Final =[]
+
+  const number =Object.values(object)
+
+
+  for (let xx = 0; xx < Array_TheKey.length; xx++)
+  
+  {
+    let push = Array_TheKey[xx]+ ': '+number[xx]
+
+   
+    //  'Alan Turing: 222-853-5933'
+    
+
+
+
+
+    Final.push(push)
+    
+  }
+  return Final
+
+
+
 };
 
 
@@ -245,7 +271,18 @@ describe('Testing challenge 6', () => {
 });
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  
+  
+  const characters=arr.find(children=>
+    
+    {
+    return children.name===character
+
+  }
+  
+  )
+  // unction should take in an array of data and a character name and return a Boolean.
+  return Object.values(characters).length>=4?true:false
 
 };
 
