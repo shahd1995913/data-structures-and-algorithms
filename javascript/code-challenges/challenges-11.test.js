@@ -265,7 +265,29 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
- 
+
+  let Array2 = [];
+
+  data.map(value =>
+     {
+       // The names should be combined into a single string with each character name separated by "and".
+
+
+    if (value.gender == 'male' 
+
+    || value.gender == 'female')
+     {
+      Array2.push(value.name)
+
+      Array2.push(' and ')
+    }
+  })
+
+  // For example, "C-3PO and Luke Skywalker".
+  
+  Array2.pop()
+
+  return Array2.join('')
 };
 
 /* ------------------------------------------------------------------------------------------------
