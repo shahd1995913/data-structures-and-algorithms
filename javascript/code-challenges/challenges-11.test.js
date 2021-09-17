@@ -48,6 +48,7 @@ function transformToLis(passedObj){
  
   // object.entry  
   // Object.entries().
+
 }
 
 /* ------------------------------------------------------------------------------------------------
