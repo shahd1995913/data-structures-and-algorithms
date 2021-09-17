@@ -178,7 +178,9 @@ let biggerThanLuke = (arr) => {
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
-Write a function named sortBy that takes in an array of objects, each of which has a particular property, and sorts those objects by that property, lowest to highest, returning the same array.
+Write a function named sortBy that takes in an array of objects,
+ each of which has a particular property, and sorts those objects by that property, 
+ lowest to highest, returning the same array.
 
 Here is an example of the input:
 [
@@ -218,19 +220,54 @@ describe('Testing challenge 4', () => {
     ]);
   });
 });
-const sortBy = (property, arr) => {
-  let biggerMass = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].mass > 77) {
-      biggerMass.push(arr[i].name)
-      biggerMass.push(' - ')      
-    }
-    
-    
-  }
-  biggerMass.pop();
 
+
+
+
+let sortBy = (P,arr) => {
+
+
+  let Array1 = [];
+//  named sortBy that takes in an array of objects
+  if (P !== 'price') 
+  {
+    let Array2 = arr.map(c => c.name)
+
+    Array2 = Array2.sort()
+    
+    for (let kkk = 0; kkk < arr.length; kkk++)
+     {
+
+
+      const found = arr.find(m => m.name == Array2[kkk])
+
+
+      Array1.push(found)
+    }           
+    
+  } else {
+
+    Array1 = arr.sort((Value1, Value2) =>
+     {
+      if (Value1.price > Value2.price) {
+
+        return 1;
+      }
+      if (Value1.price < Value2.price)
+       {
+
+        return -1;
+      }
+      return 0;
+    });
+  }
+  return Array1;
 };
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
