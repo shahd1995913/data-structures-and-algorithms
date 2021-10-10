@@ -6,4 +6,4 @@
 ![A array-reverse2 image](array-reverse2.jpeg)
 
 ## Approach & Efficiency
- ### I use the slice that make inverse to the array
+ ### I  use the slice that make inverse to the array.
