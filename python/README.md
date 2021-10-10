@@ -74,3 +74,9 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
+
+
+| Name of Function  | link |
+| ----------- | ----------- |
+| reverse Array      | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)       |
