@@ -79,4 +79,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 | Name of Function  | link |
 | ----------- | ----------- |
-| reverse Array      | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)       |
+| reverse Array  | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)  |
