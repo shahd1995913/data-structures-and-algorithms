@@ -80,4 +80,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 | Name of Function  | link |
 | ----------- | ----------- |
 | reverse Array  | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)  |
-| array_insert_shift | /home/shahd/data-structures-and-algorithms/python/array_insert_shift/array_insert_shift/array_insert_shift.py |
+| array_insert_shift | [link to the array insert shift  ](/home/shahd/data-structures-and-algorithms/python/array_insert_shift/array_insert_shift/array_insert_shift.py) |
