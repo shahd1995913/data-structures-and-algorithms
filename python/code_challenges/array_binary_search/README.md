@@ -15,3 +15,4 @@ Example :
 ## space-->O(n) due function involves checking all the values in an input data
 ## time-->O(logn) means time goes up linearly while the n goes up exponentially.
 
+## how long this assignment took ? 4hrs
