@@ -23,7 +23,11 @@ To run your tests
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
 
-| Name of Function      | link |
+
+| Name of Function  | link |
 | ----------- | ----------- |
-| reverse Array      | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/REDME.md)
+| reverse Array  | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)  |
+| array_insert_shift | [link to the array insert shift  ](/home/shahd/data-structures-and-algorithms/python/array_insert_shift/array_insert_shift/array_insert_shift.py) |
+| Binary search array  | [link to the   binary search array   ](/home/shahd/data-structures-and-algorithms/python/code_challenges/array_binary_search/README.md) |
+
 
