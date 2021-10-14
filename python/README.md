@@ -23,7 +23,6 @@ Each type of code challenge has slightly different instructions. Please refer to
       def method_name(self):
         # method body
     ```
-
 - Tests
   - Within folder `tests` create a test file called `test_[data_structure].py`
     - i.e. `tests/test_linked_list.py`
