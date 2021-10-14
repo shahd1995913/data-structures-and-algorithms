@@ -27,3 +27,5 @@ To run your tests
 | ----------- | ----------- |
 | reverse Array      | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/REDME.md)
 
+| Binary search array  | [link to the   binary search array   ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/array_binary_search/) |
+
