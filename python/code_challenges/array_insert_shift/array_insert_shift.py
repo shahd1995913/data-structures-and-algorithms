@@ -3,10 +3,10 @@ import math
 """
 Create a function called insertShiftArray
 take  array and a value to be added in the array .
-the new value it will add in the mid of array .
+the new value it will add in the mid of array.
 
 """
-def insertShiftArray(array, new_val_to_add):
+def insertShiftArray(array, new_val_to_add) :
 
     print("The Original array :",array)
 
