@@ -28,4 +28,8 @@ To run your tests
 | reverse Array  | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)  |
 | array_insert_shift | [link to the array insert shift ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/array_insert_shift/) |
 | Binary search array  | [link to the   binary search array  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/array_binary_search/) |
+| Queue using two Stacks.  | [link to the   Queue using two Stacks.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_pseudo/) |
+
+
+
 
