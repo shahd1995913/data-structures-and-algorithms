@@ -14,7 +14,7 @@ Implement a Queue using two Stacks.
 ### The result after run the code
 ![image5](results.png)
 
-## the pull Requst : https://github.com/shahd1995913/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_pseudo/README.md
+## the pull Requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/61
 
 
 
