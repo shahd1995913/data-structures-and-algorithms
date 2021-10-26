@@ -1,5 +1,3 @@
-
-
 class Node:
     """ self reference to object like this  """
     """  class contian all element  , Reference for all  data called class Node  """

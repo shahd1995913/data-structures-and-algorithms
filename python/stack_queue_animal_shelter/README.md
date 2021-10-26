@@ -14,5 +14,4 @@
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 ## the result after run the code :
-
-![image2](result_stack_queue_animal_shelter.png)
+### 2 passed in tests/test_stack_queue_animal_shelter.py
