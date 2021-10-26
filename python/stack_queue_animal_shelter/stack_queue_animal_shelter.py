@@ -110,7 +110,7 @@ class AnimalShelter():
 
           return "null"
 
-class cat_animal():
+class Cat_animal():
 
   def __init__(self,name):
 
@@ -118,7 +118,7 @@ class cat_animal():
 
     self.typeofanamal = "cat"
 
-class dog_animal():
+class Dog_animal():
 
   def __init__(self,name):
 
@@ -126,54 +126,5 @@ class dog_animal():
 
     self.typeofanamal = "dog"
 
-
-if __name__ == "__main__":
-
-    shelter = AnimalShelter()
-
-    dog1 = dog_animal("Ram")
-
-    dog2 = dog_animal("Jo")
-
-    dog3 = dog_animal("Li")
-
-    dog4  = dog_animal("Miro")
-
-    shelter.enqueue(dog1)
-
-    shelter.enqueue(dog2)
-
-    shelter.enqueue(dog3)
-
-    shelter.enqueue(dog4)
-
-
-    print(shelter.dog)
-
-    shelter.dequeue("dog")
-
-    print(shelter.dog)
-
-    cat1 = cat_animal("lili")
-
-    cat2 = cat_animal("meaow")
-
-    cat3 = cat_animal("tom")
-
-    cat4 = cat_animal("jury")
-
-    shelter.enqueue(cat1)
-
-    shelter.enqueue(cat2)
-
-    shelter.enqueue(cat3)
-
-    shelter.enqueue(cat4)
-
-    print(shelter.cat)
-
-    shelter.dequeue("cat")
-
-    print(shelter.cat)
 
 
