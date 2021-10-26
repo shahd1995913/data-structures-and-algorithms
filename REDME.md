@@ -30,6 +30,6 @@ To run your tests
 | Binary search array  | [link to the   binary search array  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/array_binary_search/) |
 | Queue using two Stacks.  | [link to the   Queue using two Stacks.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_pseudo/) |
 | First-in, First out Animal Shelter.  | [First-in, First out Animal Shelter.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/) |
-
+| Multi-bracket Validation.  | [Multi-bracket Validation.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_brackets/) |
 
 
