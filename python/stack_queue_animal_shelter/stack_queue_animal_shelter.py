@@ -1,6 +1,5 @@
 
 
-
 class Node:
     """ self reference to object like this  """
     """  class contian all element  , Reference for all  data called class Node  """
@@ -125,6 +124,3 @@ class Dog_animal():
     self.name = name
 
     self.typeofanamal = "dog"
-
-
-
