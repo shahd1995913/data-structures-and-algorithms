@@ -17,7 +17,7 @@
 
 ![image2](result_stack_queue_animal_shelter.png)
 
-the pull requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/67
+the pull requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/70/
 
 link : https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/
 
