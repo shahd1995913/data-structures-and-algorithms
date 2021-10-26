@@ -18,4 +18,4 @@
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-### The result will return False
+### The result will return False after insert the input have an error like this input input_data="({}]"

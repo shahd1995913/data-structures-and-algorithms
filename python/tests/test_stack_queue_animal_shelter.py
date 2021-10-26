@@ -50,7 +50,7 @@ def test_cog():
 
     shelter.enqueue(cat4)
 
-    assert shelter.cat.front.value   == "lili"
+    assert shelter.cat.front.value   == "lilsi"
 
     shelter.dequeue("cat")
 
