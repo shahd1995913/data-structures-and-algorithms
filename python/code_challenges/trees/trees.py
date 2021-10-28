@@ -97,3 +97,50 @@ left- right - root
 
         return out_post
 
+"""
+Create a Binary Search Tree class
+"""
+class Binary_search(Binarytrees):
+    """
+Add method that Arguments: value and Return: nothing
+Adds a new node with that value in the correct location in the binary search tree.
+    """
+    def Add(self, val):
+
+        node = Node(val)
+
+        if self.root == None:
+
+            self.root = node
+
+            return
+
+        curr_val = self.root
+
+        while curr_val:
+            if curr_val.value < val:
+
+                if curr_val.left:
+
+                   curr_val = curr_val.left
+
+                else:
+
+                    curr_val.left = node
+
+                    return
+
+            if curr_val.value > val:
+
+                if curr_val.right:
+
+                    curr_val = curr_val.right
+
+                else:
+
+                    curr_val.right = node
+
+                    return
+
+
+
