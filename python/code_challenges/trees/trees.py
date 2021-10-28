@@ -14,16 +14,16 @@ class Node():
 
         self.left = None
 
-"""
+    """
 __str__ method in Python represents the class objects as a
 string – it can be used for classes.
 """
-def __str__(self):
+    def __str__(self):
 
         return str(self.value)
 
 
-"""
+    """
 Create a Binary Tree class
 """
 class Binarytrees():
@@ -80,7 +80,7 @@ pre order method  root -  left - right
 
         """
 
-def post(self, root):
+    def post(self, root):
 
         out_post=[]
 
@@ -143,4 +143,49 @@ Adds a new node with that value in the correct location in the binary search tre
                     return
 
 
+                    """
+Contains  method  that the Argument: value and Returns: boolean
 
+indicating whether or not the value is in the tree at least once.
+
+"""
+
+
+    def contain(self, val):
+
+        if val == self.root:
+
+            return True
+
+        curr_val = self.root
+
+        while curr_val:
+
+
+            if curr_val.value < val:
+
+                if curr_val.left:
+
+                   curr_val = curr_val.left
+
+                else:
+
+                    return False
+
+            if curr_val.value > val:
+
+                if curr_val.right:
+
+                   curr_val = curr_val.right
+
+                else:
+
+                    return False
+
+
+
+            if curr_val.value == val:
+
+                return True
+
+        return False
