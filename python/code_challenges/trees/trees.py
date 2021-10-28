@@ -31,3 +31,25 @@ class Binarytrees():
     def __init__(self):
 
         self.root = None
+        """
+pre order method
+"""
+    def pre(self, root):
+
+        output_preorder=[]
+
+        if root:
+            """ root of tree"""
+            output_preorder.append(root.value)
+
+            """left of tree"""
+
+            output_preorder = output_preorder + self.pre_order(root.left)
+
+            """rifht of tree"""
+
+            output_preorder = output_preorder + self.pre_order(root.right)
+
+
+        return output_preorder
+
