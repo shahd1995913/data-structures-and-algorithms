@@ -74,3 +74,26 @@ pre order method  root -  left - right
 
         return out_inorder
 
+        """
+        post order which returns an array of the values,
+        ordered appropriately  left- right - root
+
+        """
+
+def post(self, root):
+
+        out_post=[]
+
+        if root:
+            """
+left- right - root
+            """
+
+            out_post = self.post_order(root.left)
+
+            out_post = out_post + self.post_order(root.right)
+
+            out_post.append(root.value)
+
+        return out_post
+
