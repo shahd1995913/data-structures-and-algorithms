@@ -32,7 +32,7 @@ class Binarytrees():
 
         self.root = None
         """
-pre order method
+pre order method  root -  left - right
 """
     def pre(self, root):
 
@@ -52,4 +52,25 @@ pre order method
 
 
         return output_preorder
+
+
+        """
+        In order method    left - root - right
+
+        """
+
+    def inorder(self, root):
+
+        out_inorder=[]
+
+        if root:
+
+            """ left """
+            out_inorder = self.in_order(root.left)
+            """root """
+            out_inorder.append(root.value)
+            """ right"""
+            out_inorder = out_inorder + self.in_order(root.right)
+
+        return out_inorder
 
