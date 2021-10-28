@@ -14,4 +14,20 @@ class Node():
 
         self.left = None
 
+"""
+__str__ method in Python represents the class objects as a
+string – it can be used for classes.
+"""
+def __str__(self):
 
+        return str(self.value)
+
+
+"""
+Create a Binary Tree class
+"""
+class Binarytrees():
+
+    def __init__(self):
+
+        self.root = None
