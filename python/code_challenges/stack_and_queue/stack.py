@@ -36,3 +36,23 @@ class Stack:
         self.top=contain_node
 
 
+    def pop(self):
+
+
+        if not self.top:
+
+
+            return "Stack null not contain any values "
+
+        else :
+
+
+            t = self.top
+
+            self.top = t.next
+
+            t.next = None
+
+            return t.item
+
+

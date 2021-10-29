@@ -3,7 +3,8 @@
 - [x] Node : Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
 - [x] Create a Stack class that has a top property. It creates an empty Stack when instantiated. This object should be aware of a default empty value assigned to top when the stack is created.
 - [x] push that take Arguments: value and adds a new node with that value to the top of the stack with an O(1) Time performance.
-- []
+- [x] pop that take Arguments: none and Returns: the value from node from the top of the stack , Removes the node from the top of
+the stack and Should raise exception when called on empty stack.
 - []
 - []
 - []
