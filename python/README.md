@@ -86,5 +86,3 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 | First-in, First out Animal Shelter.  | [First-in, First out Animal Shelter.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/) |
 | Multi-bracket Validation.  | [Multi-bracket Validation.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_brackets/) |
 
-
-
