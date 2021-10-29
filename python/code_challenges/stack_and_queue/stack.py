@@ -42,7 +42,7 @@ class Stack:
         if not self.top:
 
 
-            return "Stack null not contain any values "
+            return "Stack null not contain any values"
 
         else :
 
