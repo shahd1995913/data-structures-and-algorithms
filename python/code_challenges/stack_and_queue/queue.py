@@ -19,3 +19,20 @@ class Queue:
     def is_empty(self):
 
         return self.front == None
+
+
+    def enqueue(self, value):
+
+        t = Node(value)
+
+        if self.rear == None:
+
+            self.front = self.rear = t
+
+            return
+
+        self.rear.next = t
+
+        self.rear = t
+
+
