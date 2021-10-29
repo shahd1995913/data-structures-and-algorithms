@@ -6,8 +6,8 @@
 - [x] pop that take Arguments: none and Returns: the value from node from the top of the stack , Removes the node from the top of
 the stack and Should raise exception when called on empty stack.
 - [x] peek take Arguments: none , Returns: Value of the node located at the top of the stack , Should raise exception when called on empty stack.
-- []
-- []
+- [x] Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+- [x]    create  is empty  function that take Arguments: none and Returns: Boolean indicating whether or not the queue is empty
 - []
 - []
 - []
