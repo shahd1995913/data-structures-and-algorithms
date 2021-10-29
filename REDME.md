@@ -28,4 +28,9 @@ To run your tests
 | reverse Array  | [link to the reverse Array  ](/home/shahd/data-structures-and-algorithms/python/code_challenges/reverse_linked_list.py)  |
 | array_insert_shift | [link to the array insert shift ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/array_insert_shift/) |
 | Binary search array  | [link to the   binary search array  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/array_binary_search/) |
+| Zip 2 list as one  | [link to the  Zip 2 list   ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/linkedlist_zip/) |
+| Queue using two Stacks.  | [link to the   Queue using two Stacks.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_pseudo/) |
+| First-in, First out Animal Shelter.  | [First-in, First out Animal Shelter.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/) |
+| Multi-bracket Validation.  | [Multi-bracket Validation.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_brackets/) |
+
 
