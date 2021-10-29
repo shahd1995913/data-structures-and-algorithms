@@ -45,7 +45,12 @@ class LinkedList:
     returns: None
     """
     # create new node
-    self.head = Node(value, self.head)
+
+    if self.head :
+
+      self.head = Node(value, self.head)
+
+    self.head =Node(value)
 
 
   """The Includes take  a value parameters
