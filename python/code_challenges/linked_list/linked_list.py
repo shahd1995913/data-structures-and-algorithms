@@ -32,9 +32,89 @@ class LinkedList:
   """
 
   def __init__(self):
+
     self.head = None
 
+    """
+function inside the linked list  that  called kth that take  kth value from the end of a linked list.
+
+"""
+  def kth(self,kth_value):
+    """
+if the kth_value less than 0 then it will give error
+
+      """
+    if kth_value<0 :
+
+      return "Exception"
+
+    curr=self.head
+
+    value_count=0
+
+    value_counter=0
+
+    while curr:
+
+      if curr.next == None:
+
+        value_counter =value_count-kth_value
+
+        if value_counter<0:
+
+          return "Exception"
+
+        break
+
+      curr=curr.next
+
+      value_count+=1
+
+    count=0
+
+    curr=self.head
+
+    while curr:
+
+      if count == value_counter:
+
+        return curr.data
+
+      count+=1
+
+      curr=curr.next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   def insert(self, value):
+
+
+
+
+
+
     """"
     Insert creates a Node with the value that was passed and adds
     it to the head of the linked list shifting all other values down
@@ -131,3 +211,7 @@ string representing all the values in the Linked List,
 
 
    return char1
+
+
+
+
