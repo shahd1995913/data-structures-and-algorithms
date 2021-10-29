@@ -18,8 +18,8 @@
 
 ## the solution was zip for 2 list as one :  Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
 the pull requst : 
-https://github.com/shahd1995913/data-structures-and-algorithms/pull/75
-https://github.com/shahd1995913/data-structures-and-algorithms/pull/76/
-https://github.com/shahd1995913/data-structures-and-algorithms/pull/77
+1. https://github.com/shahd1995913/data-structures-and-algorithms/pull/75
+2. https://github.com/shahd1995913/data-structures-and-algorithms/pull/76/
+3. https://github.com/shahd1995913/data-structures-and-algorithms/pull/77
 
 
