@@ -25,4 +25,14 @@ class Stack:
             return True
 
 
+    def push(self,value):
+
+        contain_node=Node(value)
+
+        if self.top:
+
+           contain_node.next=self.top
+
+        self.top=contain_node
+
 
