@@ -56,3 +56,16 @@ class Stack:
             return t.item
 
 
+    def peek(self):
+
+        if self.check_stackempty():
+
+            return "Stack null not contain any values"
+
+        else:
+
+            return self.top.item
+
+
+
+
