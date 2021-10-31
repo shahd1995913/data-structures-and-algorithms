@@ -110,3 +110,59 @@ def test_toString():
     assert expected==actul
 
 
+def test_kth1():
+  linked_obj=LinkedList()
+  linked_obj.insert(10)
+  linked_obj.insert(20)
+  linked_obj.insert(30)
+  linked_obj.insert(40)
+  expected=20
+  actual=linked_obj.kth(1)
+  assert expected==actual
+
+def test_kth2():
+
+  linked_obj=LinkedList()
+  linked_obj.insert(10)
+  linked_obj.insert(20)
+  linked_obj.insert(30)
+  linked_obj.insert(40)
+  expected="Exception"
+  actual=linked_obj.kth(-1)
+  assert expected==actual
+
+
+
+def test_kth3():
+  linked_obj=LinkedList()
+  linked_obj.insert(10)
+  linked_obj.insert(20)
+  linked_obj.insert(30)
+  linked_obj.insert(40)
+  expected="Exception"
+  actual=linked_obj.kth(6)
+  assert expected==actual
+
+
+def test_kth4():
+
+  linked_obj=LinkedList()
+  linked_obj.insert(10)
+  linked_obj.insert(20)
+  linked_obj.insert(30)
+  linked_obj.insert(40)
+
+  expected=40
+  actual=linked_obj.kth(3)
+  assert expected==actual
+
+def test_kth4():
+
+  LinkedList_obj=LinkedList()
+  LinkedList_obj.insert(1)
+  expected=1
+  actual=LinkedList_obj.kth(0)
+  assert expected==actual
+
+
+
