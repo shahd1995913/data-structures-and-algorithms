@@ -37,8 +37,8 @@ the task take 2 hrs to complete
 3. In order
 
 
-
-
 ## Whiteboard Process
-
+![tree](tree_max.jpg)
 ## Approach & Efficiency
+## space O(1)
+## time O(n)

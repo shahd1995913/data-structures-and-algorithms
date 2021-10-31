@@ -1,145 +1,167 @@
 from code_challenges.trees.trees import Node , Binary_search , Binarytrees
 import pytest
 
-
 @pytest.fixture
 
 def tree():
 
   tree = Binarytrees()
 
-  a_node = Node('a')
+  node1 = Node(1)
 
 
-  b_node = Node('b')
+  node2 = Node(2)
 
-  c_node = Node('c')
+  node3 = Node(3)
 
-  d_node = Node('d')
+  node4 = Node(4)
 
-  a_node.left = b_node
+  node1.left = node2
 
-  a_node.right = c_node
+  node1.right = node3
 
-  b_node.left = d_node
+  node2.left = node4
 
 
-  tree.root=a_node
+  tree.root=node1
 
   return tree
 
 
-def test_pre_order(tree):
+def test_pre(tree):
 
-  expected = ["a", "b", "d", "c"]
+  expct = [1, 2, 4, 3]
 
-  actual = tree.pre()
+  real = tree.pre()
 
-  assert actual == expected
+  assert real == expct
 
-  print("test_post_order_ passed")
+def test_in(tree):
 
-def test_in_order(tree):
+  expct = [4, 2, 1, 3]
 
-  expected = ["d", "b", "a", "c"]
+  real = tree.inorder()
 
-  actual = tree.inorder()
+  assert real == expct
 
-  assert actual == expected
 
-  print("test_post_order_ passed")
+def test_post(tree):
 
-def test_post_order(tree):
+  expct = [4, 2, 3, 1]
 
-  expected = ["d", "b", "c", "a"]
+  real = tree.postorder()
 
-  actual = tree.post_order()
+  assert real == expct
 
-  assert actual == expected
-
-  print("test_post_order_ passed")
 
 
 @pytest.fixture
 
-def binary_tree():
+def binarytree():
 
-  binary_tree = Binary_search()
-
-
-  a_node = Node('A')
-  b_node = Node('B')
-  c_node = Node('C')
-  d_node = Node('D')
-  a_node.left = b_node
-  a_node.right = c_node
-  b_node.left = d_node
-
-
-  binary_tree.root=a_node
-  return binary_tree
-
-
-def test_bfs(binary_tree):
-
-  expected = ["A", "B", "C", "D"]
-
-  actual = binary_tree.bfs()
-
-  assert actual == expected
-  print("test_bfs passed")
+  binarytree = Binary_search()
 
 
 
-def test_add_once():
+  node1 = Node(1)
 
-    tree = Binary_search()
 
-    tree.add('A')
+  node2 = Node(2)
 
-    expected = "A"
+  node3 = Node(3)
 
-    actual = tree.root.value
+  node4 = Node(4)
 
-    assert actual == expected
+  node1.left = node2
+  node1.right = node3
+  node2.left = node4
 
-def test_add_twice():
 
-    tree = Binary_search()
 
-    tree.add("A")
-    tree.add("B")
+  binarytree.root=node1
+  return binarytree
 
-    expected = ["A","B"]
 
-    actual = tree.pre_order()
 
-    assert actual == expected
+# def test_Add_once():
 
-def test_contains_value():
+#     tree = Binary_search()
 
-    tree = Binary_search()
+#     tree.Add('A')
 
-    tree.add("A")
-    tree.add("B")
-    tree.add("C")
+#     expected = "A"
 
-    expected = True
+#     actual = tree.root.value
 
-    actual = tree.__contains__("B")
+#     assert actual == expected
 
-    assert actual == expected
+# def test_Add_twice():
 
-def test_not_contains_value():
+#     tree = Binary_search()
 
-    tree = Binary_search()
+#     tree.Add("A")
+#     tree.Add("B")
 
-    tree.add("A")
-    tree.add("B")
-    tree.add("C")
+#     expected = ["A","B"]
 
-    expected = False
+#     actual = tree.pre()
 
-    actual = tree.__contains__("E")
+#     assert actual == expected
 
-    assert actual == expected
+# def test_contains_value():
+
+#     tree = Binary_search()
+
+#     tree.Add("A")
+#     tree.Add("B")
+#     tree.Add("C")
+
+#     expected = True
+
+#     actual = tree.contain("B")
+
+#     assert actual == expected
+
+# def test_not_contains_value():
+
+#     tree = Binary_search()
+
+#     tree.Add("A")
+#     tree.Add("B")
+#     tree.Add("C")
+
+#     expected = False
+
+#     actual = tree.contain("E")
+
+#     assert actual == expected
+def test_max_value():
+   """
+    Test max value with Tree have an elements
+   """
+   tree = Binary_search()
+   tree.Add(1)
+   tree.Add(2)
+   tree.Add(3)
+   tree.Add(18)
+   tree.Add(15)
+
+   #output
+
+   expected = 18
+   actul=tree.retuen_max_tree()
+
+   assert expected==actul
+
+def test_max_value2():
+   """
+    Test max value with Tree is empty
+   """
+   tree = Binary_search()
+
+   #output
+
+   expected = 0
+   actul=tree.retuen_max_tree()
+
+   assert expected==actul
