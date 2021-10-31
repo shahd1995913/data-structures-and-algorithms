@@ -1,4 +1,3 @@
-
 """
 Create a Node class that has properties for the value stored in the node,
 the left child node, and the right child node.
@@ -22,90 +21,141 @@ string – it can be used for classes.
 
         return str(self.value)
 
-
     """
-Create a Binary Tree class
+Create a Binarytrees class that have a 4 method  pre  and post and in order and max for finding the max value in tree
 """
 class Binarytrees():
 
     def __init__(self):
 
         self.root = None
+
         """
-pre order method  root -  left - right
+================================ " Find the Maximum Value in a Binary Tree "================================================================
+create a function inside Binarytrees that called retuen_max_tree that return the max value in tree .
+
 """
-    def pre(self, root):
+    def retuen_max_tree(self):
+        """ if the tree null (not contain any element) then retuen 0"""
 
-        output_preorder=[]
+        if self.root == None:
 
-        if root:
-            """ root of tree"""
-            output_preorder.append(root.value)
+          return 0
 
-            """left of tree"""
+        max_val = self.root.value
 
-            output_preorder = output_preorder + self.pre_order(root.left)
-
-            """rifht of tree"""
-
-            output_preorder = output_preorder + self.pre_order(root.right)
-
-
-        return output_preorder
-
-
-        """
-        In order method    left - root - right
-
-        """
-
-    def inorder(self, root):
-
-        out_inorder=[]
-
-        if root:
-
-            """ left """
-            out_inorder = self.in_order(root.left)
-            """root """
-            out_inorder.append(root.value)
-            """ right"""
-            out_inorder = out_inorder + self.in_order(root.right)
-
-        return out_inorder
-
-        """
-        post order which returns an array of the values,
-        ordered appropriately  left- right - root
-
-        """
-
-    def post(self, root):
-
-        out_post=[]
-
-        if root:
-            """
-left- right - root
+        def max_fun(root):
+          """
+create qa function called max_fun that check  use of If condition the max value in the node of  binary tree
+and retuen the max value
             """
 
-            out_post = self.post_order(root.left)
+          nonlocal max_val
 
-            out_post = out_post + self.post_order(root.right)
+          if root.right:
 
-            out_post.append(root.value)
+              max_fun(root.right)
 
-        return out_post
+          if root.left:
 
-"""
-Create a Binary Search Tree class
-"""
+              max_fun(root.left)
+
+
+          if root.value > max_val:
+
+              max_val = root.value
+
+          return max_val
+
+        return max_fun(self.root)
+
+
+
+    def in_order(self):
+
+        list=[]
+
+        def inside_fun(node):
+
+            if node:
+
+                if node.left:
+
+                    inside_fun(node.left)
+
+                list.append(node.value)
+
+                if node.right:
+
+                    inside_fun(node.right)
+
+        inside_fun(self.root)
+
+        return list
+
+
+
+    def pre(self):
+
+        list=[]
+
+        def inside_fun(node):
+
+            if node:
+
+                list.append(node.value)
+
+                if node.left:
+
+                    inside_fun(node.left)
+
+                if node.right:
+
+                    inside_fun(node.right)
+
+        inside_fun(self.root)
+
+        return list
+
+
+
+    def post_order(self):
+
+        list=[]
+
+        def inside_fun(node):
+
+            if node:
+
+
+                if node.left:
+
+                    inside_fun(node.left)
+
+                if node.right:
+
+                    inside_fun(node.right)
+
+
+
+                list.append(node.value)
+
+        inside_fun(self.root)
+
+        return list
+
+
+
+
+
+
 class Binary_search(Binarytrees):
+      """
+Adds a new node with in the binary search tree by create a Add method  that take a value and add it to binary tree
     """
-Add method that Arguments: value and Return: nothing
-Adds a new node with that value in the correct location in the binary search tree.
-    """
-    def Add(self, val):
+
+
+      def Add(self, val):
 
         node = Node(val)
 
@@ -118,6 +168,7 @@ Adds a new node with that value in the correct location in the binary search tre
         curr_val = self.root
 
         while curr_val:
+
             if curr_val.value < val:
 
                 if curr_val.left:
@@ -143,15 +194,8 @@ Adds a new node with that value in the correct location in the binary search tre
                     return
 
 
-                    """
-Contains  method  that the Argument: value and Returns: boolean
 
-indicating whether or not the value is in the tree at least once.
-
-"""
-
-
-    def contain(self, val):
+      def contain(self, val):
 
         if val == self.root:
 
@@ -189,3 +233,6 @@ indicating whether or not the value is in the tree at least once.
                 return True
 
         return False
+
+
+

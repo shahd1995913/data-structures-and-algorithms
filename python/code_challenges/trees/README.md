@@ -17,23 +17,31 @@
 <!-- Description of the challenge -->
 Challenge was when work with  add method in binary tree
 the task take 2 hrs to complete
-## Approach & Efficiency
+## Approach & Efficiency --IN Tree
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-## The time  O(n) and  Space  O(1)
+## The time  O(n) and  Space  O(1)  for tree
+##  for find the max number in tree
 
-## API
 
-
-### The method used in binary search tree
+### The method used in binary search tree--IN Tree
 1. Add
 2. Contains
 
-### The method used in Binary tree
+### The method used in Binary tree--IN Tree
 1. pre order
 2. post order
 3. In order
 
+# ==============================================Code Challenge: Class 16 -- date 2021-10-31========================================================
+# Find the Maximum Value in a Binary Tree
+## Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
 
+## Whiteboard Process--IN Max value In Tree
+![tree](tree_max.jpg)
 
+## Approach & Efficiency--IN Max value In Tree
+## space O(1)
+## time O(n)
 
+### taking 3 hrs to done the work
