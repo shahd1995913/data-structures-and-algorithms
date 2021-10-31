@@ -40,7 +40,7 @@ def test_in(tree):
 
   expct = [4, 2, 1, 3]
 
-  real = tree.inorder()
+  real = tree.in_order()
 
   assert real == expct
 
@@ -49,7 +49,7 @@ def test_post(tree):
 
   expct = [4, 2, 3, 1]
 
-  real = tree.postorder()
+  real = tree.post_order()
 
   assert real == expct
 

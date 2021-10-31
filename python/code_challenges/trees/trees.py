@@ -22,7 +22,7 @@ string – it can be used for classes.
         return str(self.value)
 
     """
-Create a Binary Tree class that have a 3 method  pre  and post and in order and max for finding the max value in tree
+Create a Binarytrees class that have a 4 method  pre  and post and in order and max for finding the max value in tree
 """
 class Binarytrees():
 
@@ -32,16 +32,23 @@ class Binarytrees():
 
         """
 ================================ " Find the Maximum Value in a Binary Tree "================================================================
-create a function inside Binarytrees that called retuen_max_tree that return the 0
+create a function inside Binarytrees that called retuen_max_tree that return the max value in tree .
 
 """
     def retuen_max_tree(self):
+        """ if the tree null (not contain any element) then retuen 0"""
 
         if self.root == None:
+
           return 0
+
         max_val = self.root.value
 
         def max_fun(root):
+          """
+create qa function called max_fun that check  use of If condition the max value in the node of  binary tree
+and retuen the max value
+            """
 
           nonlocal max_val
 
@@ -63,45 +70,79 @@ create a function inside Binarytrees that called retuen_max_tree that return the
         return max_fun(self.root)
 
 
+
+    def in_order(self):
+
+        list=[]
+
+        def inside_fun(node):
+
+            if node:
+
+                if node.left:
+
+                    inside_fun(node.left)
+
+                list.append(node.value)
+
+                if node.right:
+
+                    inside_fun(node.right)
+
+        inside_fun(self.root)
+
+        return list
+
+
+
     def pre(self):
-        arr=[]
-        def rec(node):
+
+        list=[]
+
+        def inside_fun(node):
+
             if node:
-                arr.append(node.value)
+
+                list.append(node.value)
+
                 if node.left:
-                    rec(node.left)
+
+                    inside_fun(node.left)
+
                 if node.right:
-                    rec(node.right)
-        rec(self.root)
 
-        return arr
+                    inside_fun(node.right)
+
+        inside_fun(self.root)
+
+        return list
 
 
-    def inorder(self):
-        arr=[]
-        def rec(node):
+
+    def post_order(self):
+
+        list=[]
+
+        def inside_fun(node):
+
             if node:
+
+
                 if node.left:
-                    rec(node.left)
-                arr.append(node.value)
+
+                    inside_fun(node.left)
+
                 if node.right:
-                    rec(node.right)
-        rec(self.root)
 
-        return arr
+                    inside_fun(node.right)
 
-    def postorder(self):
-        arr=[]
-        def rec(node):
-            if node:
-                if node.left:
-                    rec(node.left)
-                if node.right:
-                    rec(node.right)
-                arr.append(node.value)
-        rec(self.root)
 
-        return arr
+
+                list.append(node.value)
+
+        inside_fun(self.root)
+
+        return list
 
 
 
@@ -110,8 +151,7 @@ create a function inside Binarytrees that called retuen_max_tree that return the
 
 class Binary_search(Binarytrees):
       """
-Add method that Arguments: value and Return: nothing
-Adds a new node with that value in the correct location in the binary search tree.
+Adds a new node with in the binary search tree by create a Add method  that take a value and add it to binary tree
     """
 
 
@@ -128,6 +168,7 @@ Adds a new node with that value in the correct location in the binary search tre
         curr_val = self.root
 
         while curr_val:
+
             if curr_val.value < val:
 
                 if curr_val.left:
@@ -192,9 +233,6 @@ Adds a new node with that value in the correct location in the binary search tre
                 return True
 
         return False
-
-
-
 
 
 
