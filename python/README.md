@@ -85,7 +85,6 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 | Queue using two Stacks.  | [link to the   Queue using two Stacks.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_pseudo/) 
 | First-in, First out Animal Shelter.  | [First-in, First out Animal Shelter.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/) |
 | Multi-bracket Validation.  | [Multi-bracket Validation.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_brackets/) |
-| Tree| [Tree](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/trees/
-) |
+| Tree| [link to tree](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/trees/) |
 
 
