@@ -73,7 +73,9 @@ def binarytree():
   node4 = Node(4)
 
   node1.left = node2
+
   node1.right = node3
+
   node2.left = node4
 
 
@@ -83,85 +85,89 @@ def binarytree():
 
 
 
-# def test_Add_once():
+def test_add1():
 
-#     tree = Binary_search()
+    tree = Binary_search()
 
-#     tree.Add('A')
+    tree.Add(80)
 
-#     expected = "A"
+    expext = 80
 
-#     actual = tree.root.value
+    real = tree.root.value
 
-#     assert actual == expected
+    assert real == expext
 
-# def test_Add_twice():
+def test_Add_tow_time_Node():
 
-#     tree = Binary_search()
+    tree = Binary_search()
 
-#     tree.Add("A")
-#     tree.Add("B")
+    tree.Add(10)
 
-#     expected = ["A","B"]
+    tree.Add(20)
 
-#     actual = tree.pre()
+    expext = [10,20]
 
-#     assert actual == expected
+    real = tree.pre()
 
-# def test_contains_value():
+    assert real == expext
 
-#     tree = Binary_search()
+def test_contain_values():
 
-#     tree.Add("A")
-#     tree.Add("B")
-#     tree.Add("C")
+    tree = Binary_search()
 
-#     expected = True
+    tree.Add(10)
 
-#     actual = tree.contain("B")
+    tree.Add(20)
 
-#     assert actual == expected
+    tree.Add(70)
 
-# def test_not_contains_value():
 
-#     tree = Binary_search()
+    expext = True
 
-#     tree.Add("A")
-#     tree.Add("B")
-#     tree.Add("C")
+    real = tree.contain(20)
 
-#     expected = False
+    assert real == expext
 
-#     actual = tree.contain("E")
+def test_non_values_contain():
 
-#     assert actual == expected
-def test_max_value():
-   """
-    Test max value with Tree have an elements
-   """
+    tree = Binary_search()
+
+    tree.Add(10)
+
+    tree.Add(20)
+
+    tree.Add(70)
+
+    expext = False
+
+    real = tree.contain(250)
+
+    assert real == expext
+
+
+
+def test_max_value_in_tree():
+
    tree = Binary_search()
+
+   tree.Add(100)
+
+   tree.Add(200)
+
    tree.Add(1)
-   tree.Add(2)
-   tree.Add(3)
-   tree.Add(18)
-   tree.Add(15)
 
-   #output
+   expext = 200
 
-   expected = 18
-   actul=tree.retuen_max_tree()
+   real=tree.retuen_max_tree()
 
-   assert expected==actul
+   assert expext==real
 
-def test_max_value2():
-   """
-    Test max value with Tree is empty
-   """
+def test_max_non_value_in_tree():
+
    tree = Binary_search()
 
-   #output
+   expext = 0
 
-   expected = 0
-   actul=tree.retuen_max_tree()
+   real=tree.retuen_max_tree()
 
-   assert expected==actul
+   assert expext==real
