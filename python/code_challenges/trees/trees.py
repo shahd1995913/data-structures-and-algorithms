@@ -23,6 +23,10 @@ string – it can be used for classes.
         return str(self.value)
 
 
+
+
+
+
     """
 Create a Binary Tree class
 """
@@ -32,70 +36,150 @@ class Binarytrees():
 
         self.root = None
         """
+        create a function inside Binarytrees that called retuen_max_tree that return the 0
+
+        """
+
+
+    def pre(self):
+        """
+        print the tree in the array with use depth way as a pre order.
+        """
+        arr=[]
+        def rec(node):
+            if node:
+                arr.append(node.value)
+                if node.left:
+                    rec(node.left)
+                if node.right:
+                    rec(node.right)
+        rec(self.root)
+
+        return arr
+
+
+    def inorder(self):
+        """
+        print the tree in the array with use depth way as a In order.
+        """
+        arr=[]
+        def rec(node):
+            if node:
+                if node.left:
+                    rec(node.left)
+                arr.append(node.value)
+                if node.right:
+                    rec(node.right)
+        rec(self.root)
+
+        return arr
+
+    def post(self):
+        """
+        print the tree in the array with use depth way as a post order.
+        """
+        arr=[]
+        def rec(node):
+            if node:
+                if node.left:
+                    rec(node.left)
+                if node.right:
+                    rec(node.right)
+                arr.append(node.value)
+        rec(self.root)
+
+        return arr
+
+
+    def retuen_max_tree(self):
+
+        if self.root == None:
+          return 0
+        max_val = self.root.value
+        def max_fun(root):
+          nonlocal max_val
+          if root.value > max_val:
+              max_val = root.value
+          if root.left:
+              max_fun(root.left)
+          if root.right:
+              max_fun(root.right)
+          return max_val
+        return max_fun(self.root)
+        """
 pre order method  root -  left - right
 """
-    def pre(self, root):
+#     def pre(self):
 
-        output_preorder=[]
+#         self.output_preorder=[]
 
-        if root:
-            """ root of tree"""
-            output_preorder.append(root.value)
-
-            """left of tree"""
-
-            output_preorder = output_preorder + self.pre_order(root.left)
-
-            """rifht of tree"""
-
-            output_preorder = output_preorder + self.pre_order(root.right)
+#         def pre_inside(root):
 
 
-        return output_preorder
 
 
-        """
-        In order method    left - root - right
 
-        """
+#                 """ root of tree"""
+#                 self.output_preorder.append(root.value)
 
-    def inorder(self, root):
 
-        out_inorder=[]
+#                 """left of tree"""
+#                 if root.left ==
 
-        if root:
+#                 self.output_preorder = self.output_preorder +pre_inside(root.left)
 
-            """ left """
-            out_inorder = self.in_order(root.left)
-            """root """
-            out_inorder.append(root.value)
-            """ right"""
-            out_inorder = out_inorder + self.in_order(root.right)
+#                 """rifht of tree"""
 
-        return out_inorder
+#                 self.output_preorder = self.output_preorder +pre_inside(root.right)
 
-        """
-        post order which returns an array of the values,
-        ordered appropriately  left- right - root
+#             print(self.output_preorder)
+#         return self.output_preorder
 
-        """
 
-    def post(self, root):
 
-        out_post=[]
 
-        if root:
-            """
-left- right - root
-            """
+#         """
+#         In order method    left - root - right
 
-            out_post = self.post_order(root.left)
+#         """
 
-            out_post = out_post + self.post_order(root.right)
+#     def inorder(self, root=None):
 
-            out_post.append(root.value)
+#         out_inorder=[]
 
-        return out_post
+#         if root:
+
+#             """ left """
+#             out_inorder = self.in_order(root.left)
+#             """root """
+#             out_inorder.append(root.value)
+#             """ right"""
+#             out_inorder = out_inorder + self.in_order(root.right)
+
+#         return out_inorder
+
+#         """
+#         post order which returns an array of the values,
+#         ordered appropriately  left- right - root
+
+#         """
+
+#     def post(self, root):
+
+#         out_post=[]
+
+#         if root:
+#             """
+# left- right - root
+#             """
+
+#             out_post = self.post_order(root.left)
+
+#             out_post = out_post + self.post_order(root.right)
+
+#             out_post.append(root.value)
+
+#         return out_post
 
 """
 Create a Binary Search Tree class
@@ -105,6 +189,8 @@ class Binary_search(Binarytrees):
 Add method that Arguments: value and Return: nothing
 Adds a new node with that value in the correct location in the binary search tree.
     """
+
+
     def Add(self, val):
 
         node = Node(val)
@@ -189,3 +275,11 @@ indicating whether or not the value is in the tree at least once.
                 return True
 
         return False
+
+
+        """
+================================ " Find the Maximum Value in a Binary Tree "================================================================
+"""
+
+
+

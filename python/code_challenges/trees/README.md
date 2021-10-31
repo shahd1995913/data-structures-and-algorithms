@@ -12,14 +12,17 @@
 ## 2. Contains
 * Argument: value
 * Returns: boolean indicating whether or not the value is in the tree at least once.
-
+# ==============================================Code Challenge: Class 16==========================================================
+# Find the Maximum Value in a Binary Tree
+## Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 ## Challenge
 <!-- Description of the challenge -->
 Challenge was when work with  add method in binary tree
 the task take 2 hrs to complete
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-## The time  O(n) and  Space  O(1)
+## The time  O(n) and  Space  O(1)  for tree
+##  for find the max number in tree
 
 ## API
 
@@ -36,4 +39,6 @@ the task take 2 hrs to complete
 
 
 
+## Whiteboard Process
 
+## Approach & Efficiency
