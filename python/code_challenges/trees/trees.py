@@ -30,6 +30,47 @@ class Binarytrees():
         self.root = None
 
 
+        """
+================================ " Find the Maximum Value in a Binary Tree "================================================================
+create a function inside Binarytrees that called retuen_max_tree that return the max value in tree .
+
+"""
+    def retuen_max_tree(self):
+        """ if the tree null (not contain any element) then retuen 0"""
+
+        if self.root == None:
+
+          return 0
+
+        max_val = self.root.value
+
+        def max_fun(root):
+          """
+create qa function called max_fun that check  use of If condition the max value in the node of  binary tree
+and retuen the max value
+            """
+
+          nonlocal max_val
+
+          if root.right:
+
+              max_fun(root.right)
+
+          if root.left:
+
+              max_fun(root.left)
+
+
+          if root.value > max_val:
+
+              max_val = root.value
+
+          return max_val
+
+        return max_fun(self.root)
+
+
+
     def in_order(self):
 
         list=[]
@@ -63,6 +104,7 @@ class Binarytrees():
             if node:
 
                 list.append(node.value)
+
 
                 if node.left:
 
@@ -192,3 +234,6 @@ Adds a new node with in the binary search tree by create a Add method  that take
                 return True
 
         return False
+
+
+

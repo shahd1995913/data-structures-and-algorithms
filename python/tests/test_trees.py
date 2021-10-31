@@ -143,3 +143,30 @@ def test_non_values_contain():
     real = tree.contain(250)
 
     assert real == expext
+
+
+def test_max_value_in_tree():
+
+   tree = Binary_search()
+
+   tree.Add(100)
+
+   tree.Add(200)
+
+   tree.Add(1)
+
+   expext = 200
+
+   real=tree.retuen_max_tree()
+
+   assert expext==real
+
+def test_max_non_value_in_tree():
+
+   tree = Binary_search()
+
+   expext = 0
+
+   real=tree.retuen_max_tree()
+
+   assert expext==real
