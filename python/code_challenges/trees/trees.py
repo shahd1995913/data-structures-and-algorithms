@@ -1,7 +1,6 @@
 """
 Create a Node class that has properties for the value stored in the node,
 the left child node, and the right child node.
-
 """
 class Node():
 
@@ -29,6 +28,7 @@ class Binarytrees():
     def __init__(self):
 
         self.root = None
+
 
         """
 ================================ " Find the Maximum Value in a Binary Tree "================================================================
@@ -104,6 +104,7 @@ and retuen the max value
             if node:
 
                 list.append(node.value)
+
 
                 if node.left:
 

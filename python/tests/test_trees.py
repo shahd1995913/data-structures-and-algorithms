@@ -145,7 +145,6 @@ def test_non_values_contain():
     assert real == expext
 
 
-
 def test_max_value_in_tree():
 
    tree = Binary_search()
