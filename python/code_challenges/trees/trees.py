@@ -1,8 +1,6 @@
-
 """
 Create a Node class that has properties for the value stored in the node,
 the left child node, and the right child node.
-
 """
 class Node():
 
@@ -22,90 +20,101 @@ string – it can be used for classes.
 
         return str(self.value)
 
-
     """
-Create a Binary Tree class
+Create a Binarytrees class that have a 4 method  pre  and post and in order and max for finding the max value in tree
 """
 class Binarytrees():
 
     def __init__(self):
 
         self.root = None
-        """
-pre order method  root -  left - right
-"""
-    def pre(self, root):
-
-        output_preorder=[]
-
-        if root:
-            """ root of tree"""
-            output_preorder.append(root.value)
-
-            """left of tree"""
-
-            output_preorder = output_preorder + self.pre_order(root.left)
-
-            """rifht of tree"""
-
-            output_preorder = output_preorder + self.pre_order(root.right)
 
 
-        return output_preorder
+    def in_order(self):
+
+        list=[]
+
+        def inside_fun(node):
+
+            if node:
+
+                if node.left:
+
+                    inside_fun(node.left)
+
+                list.append(node.value)
+
+                if node.right:
+
+                    inside_fun(node.right)
+
+        inside_fun(self.root)
+
+        return list
 
 
-        """
-        In order method    left - root - right
 
-        """
+    def pre(self):
 
-    def inorder(self, root):
+        list=[]
 
-        out_inorder=[]
+        def inside_fun(node):
 
-        if root:
+            if node:
 
-            """ left """
-            out_inorder = self.in_order(root.left)
-            """root """
-            out_inorder.append(root.value)
-            """ right"""
-            out_inorder = out_inorder + self.in_order(root.right)
+                list.append(node.value)
 
-        return out_inorder
+                if node.left:
 
-        """
-        post order which returns an array of the values,
-        ordered appropriately  left- right - root
+                    inside_fun(node.left)
 
-        """
+                if node.right:
 
-    def post(self, root):
+                    inside_fun(node.right)
 
-        out_post=[]
+        inside_fun(self.root)
 
-        if root:
-            """
-left- right - root
-            """
+        return list
 
-            out_post = self.post_order(root.left)
 
-            out_post = out_post + self.post_order(root.right)
 
-            out_post.append(root.value)
+    def post_order(self):
 
-        return out_post
+        list=[]
 
-"""
-Create a Binary Search Tree class
-"""
+        def inside_fun(node):
+
+            if node:
+
+
+                if node.left:
+
+                    inside_fun(node.left)
+
+                if node.right:
+
+                    inside_fun(node.right)
+
+
+
+                list.append(node.value)
+
+        inside_fun(self.root)
+
+        return list
+
+
+
+
+
+
 class Binary_search(Binarytrees):
+      """
+Adds a new node with in the binary search tree by create a Add method  that take a value and add it to binary tree
     """
-Add method that Arguments: value and Return: nothing
-Adds a new node with that value in the correct location in the binary search tree.
-    """
-    def Add(self, val):
+
+
+      def Add(self, val):
 
         node = Node(val)
 
@@ -118,6 +127,7 @@ Adds a new node with that value in the correct location in the binary search tre
         curr_val = self.root
 
         while curr_val:
+
             if curr_val.value < val:
 
                 if curr_val.left:
@@ -143,15 +153,8 @@ Adds a new node with that value in the correct location in the binary search tre
                     return
 
 
-                    """
-Contains  method  that the Argument: value and Returns: boolean
 
-indicating whether or not the value is in the tree at least once.
-
-"""
-
-
-    def contain(self, val):
+      def contain(self, val):
 
         if val == self.root:
 
