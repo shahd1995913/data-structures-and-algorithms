@@ -32,7 +32,7 @@ the task take 2 hrs to complete
 2. post order
 3. In order
 
-# ==============================================Code Challenge: Class 16 -- date 2021-10-31========================================================
+# =====Code Challenge: Class 16 -- date 2021-10-31=====
 # Find the Maximum Value in a Binary Tree
 ## Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
