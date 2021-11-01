@@ -6,7 +6,7 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![image](stack_queue_animal_shelter.png)
+![image](stack-queue-animal-shelter.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
