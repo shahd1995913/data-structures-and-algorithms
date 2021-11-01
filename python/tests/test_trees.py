@@ -145,6 +145,28 @@ def test_non_values_contain():
     assert real == expext
 
 
+def test_BFS():
+
+    tree_obj =Binarytrees()
+
+    tree_obj.root = Node(2)
+
+    tree_obj.root.right = Node(7)
+
+    tree_obj.root.left = Node(5)
+
+    tree_obj.root.left.left = Node(6)
+
+    tree_obj.root.left.right = Node(2)
+
+    expct =  [2,7,5,2,6]
+
+    real = tree_obj.Breadth_First_Search(tree_obj.root)
+
+    assert real == expct
+
+
+
 def test_max_value_in_tree():
 
    tree = Binary_search()
@@ -170,3 +192,4 @@ def test_max_non_value_in_tree():
    real=tree.retuen_max_tree()
 
    assert expext==real
+
