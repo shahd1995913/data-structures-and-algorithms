@@ -75,20 +75,20 @@ class queue:
         return value
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    queu1 = queue()
+#     queu1 = queue()
 
-    queu1.enqueue(20)
+#     queu1.enqueue(20)
 
-    queu1.enqueue(15)
+#     queu1.enqueue(15)
 
-    queu1.enqueue(20)
+#     queu1.enqueue(20)
 
 
-    print(queu1.dequeue())
+#     print(queu1.dequeue())
 
-    print(queu1.dequeue())
+#     print(queu1.dequeue())
 
-    print(queu1.dequeue())
+#     print(queu1.dequeue())
 
