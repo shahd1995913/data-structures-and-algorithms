@@ -6,7 +6,7 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![image](stack_queue_animal_shelter.png)
+![image](stack-queue-animal-shelter.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -14,10 +14,9 @@
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 ## the result after run the code :
+### 2 passed in tests/test_stack_queue_animal_shelter.py
 
-![image2](result_stack_queue_animal_shelter.png)
-
-the pull requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/67
+the pull requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/70/
 
 link : https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/
 

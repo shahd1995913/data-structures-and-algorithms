@@ -18,4 +18,8 @@
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-### The result will return False
+### The result will return False after insert the input have an error like this input input_data="({}]"
+
+## The last pull requst is : https://github.com/shahd1995913/data-structures-and-algorithms/pull/71/
+## The link is : https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_brackets/
+
