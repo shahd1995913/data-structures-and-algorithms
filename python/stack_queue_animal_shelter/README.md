@@ -16,7 +16,10 @@
 ## the result after run the code :
 ### 2 passed in tests/test_stack_queue_animal_shelter.py
 
-the pull requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/70/
+the pull requst :
+1. https://github.com/shahd1995913/data-structures-and-algorithms/pull/70/
+2. https://github.com/shahd1995913/data-structures-and-algorithms/pull/86
+
 
 link : https://shahd1995913.github.io/data-structures-and-algorithms/python/stack_queue_animal_shelter/
 
