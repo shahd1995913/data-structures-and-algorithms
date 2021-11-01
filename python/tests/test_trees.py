@@ -143,3 +143,24 @@ def test_non_values_contain():
     real = tree.contain(250)
 
     assert real == expext
+
+def test_BFS():
+
+    tree_obj =Binarytrees()
+
+    tree_obj.root = Node(2)
+
+    tree_obj.root.right = Node(7)
+
+    tree_obj.root.left = Node(5)
+
+    tree_obj.root.left.left = Node(6)
+
+    tree_obj.root.left.right = Node(2)
+
+    expct =  [2,7,5,2,6]
+
+    real = tree_obj.Breadth_First_Search(tree_obj.root)
+
+    assert real == expct
+

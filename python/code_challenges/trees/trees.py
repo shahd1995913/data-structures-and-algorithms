@@ -1,3 +1,4 @@
+from code_challenges.stack_and_queue.stack_and_queue import (Stack,Queue)
 """
 Create a Node class that has properties for the value stored in the node,
 the left child node, and the right child node.
@@ -21,13 +22,54 @@ string – it can be used for classes.
         return str(self.value)
 
     """
-Create a Binarytrees class that have a 4 method  pre  and post and in order and max for finding the max value in tree
+Create a Binarytrees class that have a 4 method  pre  and post and in order and max and Breadth_First_Search for finding the max value in tree
 """
 class Binarytrees():
 
     def __init__(self):
 
         self.root = None
+    """
+define a function called a bfs_queue_First_Search(BFS) that take a Arguments: tree
+and Return: list of all values in the tree, in the order they were encountered
+
+    """
+
+    def Breadth_First_Search(self,node):
+
+            arr =[]
+
+            bfs_queue = Queue()
+
+            bfs_queue.enqueue(node)
+
+            try:
+
+                while bfs_queue.peek():
+
+                    start = bfs_queue.dequeue()
+
+                    arr.append(start.value)
+
+                    if start.right:
+
+                        bfs_queue.enqueue(start.right)
+
+                    if start.left:
+
+                        bfs_queue.enqueue(start.left)
+
+
+            except AttributeError :
+
+                pass
+
+            return arr
+            """
+    End of function called Breadth_First_Search
+
+
+            """
 
 
     def in_order(self):
