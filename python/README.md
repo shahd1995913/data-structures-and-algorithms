@@ -86,6 +86,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 | Multi-bracket Validation.  | [Multi-bracket Validation.  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/stack_queue_brackets/) |
 | Tree| [link to tree](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/trees/) |
 | Breadth First tree.   | [Breadth First tree  ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/trees/Breadth_First_Search) |
+| tree-fizz-buzz   | [tree-fizz-buzz ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/tree_fizz_buzz/) |
 
 
 
