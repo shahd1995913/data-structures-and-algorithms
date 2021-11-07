@@ -1,29 +1,61 @@
-from code_challenges.tree_fizz_buzz.tree_fizz_buzz import (Binarytrees,fizz_buzz_tree,Node)
-
-def test():
-
-    obj_binary_tree = Binarytrees()
-
-    obj_binary_tree.root = Node(90)
-
-    obj_binary_tree.root.left = Node(1)
-
-    obj_binary_tree.root.right = Node(25)
-
-    obj_binary_tree.root.left.right = Node(30)
-
-    obj_binary_tree.root.left.left = Node(7)
-
-    obj_binary_tree.root.right.right=Node(3)
-
-    obj_binary_tree.root.right.right.left=Node(15)
-
-    obj_binary_tree.root.left.left.right=Node(10)
+from code_challenges.tree_fizz_buzz.tree_fizz_buzz import ( Kth_tree,Node,fizz_buzz_tree)
 
 
+def test_div_3():
 
-    expected = ['FizzBuzz', '1', '7', 'Buzz', 'FizzBuzz', 'Buzz', 'Fizz', 'FizzBuzz']
+    kth_obj= Kth_tree()
 
-    real = fizz_buzz_tree(obj_binary_tree)
+    kth_obj.root = Node(9)
 
-    assert expected == real
+    excepted = 'Fizz'
+
+    actual = fizz_buzz_tree(kth_obj.root).value
+
+    assert excepted == actual
+
+
+def test_div_5():
+
+    kth_obj= Kth_tree()
+
+    kth_obj.root = Node(3)
+
+    kth_obj.root.kth.append(Node(25))
+
+    excepted = 'Buzz'
+
+    actual = fizz_buzz_tree(kth_obj.root).kth[0].value
+
+    assert excepted == actual
+
+def test_div_3_and_5_():
+
+    kth_obj= Kth_tree()
+
+    kth_obj.root = Node(3)
+
+    kth_obj.root.kth.append(Node(5))
+
+    kth_obj.root.kth.append(Node(15))
+
+    excepted = 'FizzBuzz'
+
+    actual = fizz_buzz_tree(kth_obj.root).kth[1].value
+
+    assert excepted == actual
+
+def test_div_3_or_5():
+
+    kth_obj= Kth_tree()
+
+    kth_obj.root = Node(3)
+
+    kth_obj.root.kth.append(Node(5))
+
+    kth_obj.root.kth.append(Node(76))
+
+    excepted = '76'
+
+    actual = fizz_buzz_tree(kth_obj.root).kth[1].value
+
+    assert excepted == actual
