@@ -1,5 +1,5 @@
-from hash_map import HashTable
 import pytest
+from code_challenges.hashtable.hashtable import (Node, LinkedList, HashTable)
 
 @pytest.fixture
 def hashtable():
@@ -28,5 +28,48 @@ ord("d") = 100
 1400 % 1024 = 376
 """
 
-def test_add():
-  pass
+def test_key_value_adding():
+
+  hash_obj = HashTable()
+
+  hash_obj.add('shahed','26')
+
+  assert hash_obj.get('shahed') == '26'
+
+def test_key_value2():
+
+  hash_obj = HashTable()
+
+  hash_obj.add('Ali','26')
+
+  assert hash_obj.get('Ali') == '26'
+
+def test_key_None():
+
+  hash_obj = HashTable()
+
+  assert hash_obj.get('test') == None
+
+def test_collision_key_values():
+
+  hash_obj = HashTable()
+
+  hash_obj.add('shahed','26')
+
+  hash_obj.add('Waed','21')
+
+  print(hash_obj.contains('shahed'))
+
+  print(hash_obj.contains('Waed'))
+
+def test_collision_HT():
+
+  hash_obj = HashTable()
+
+  hash_obj.add('shahed','26')
+
+  hash_obj.add('Waed','21')
+
+  assert hash_obj.get('shahed') == '26'
+
+  assert hash_obj.get('Waed') == '21'

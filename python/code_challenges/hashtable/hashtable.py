@@ -12,6 +12,8 @@ class Node:
         self.next = next_
 
 
+
+
 class LinkedList:
     def __init__(self):
         """
@@ -26,6 +28,9 @@ class LinkedList:
         self.head = Node(value, self.head)
 
 
+
+
+
 class HashTable:
     def __init__(self, size=1024):
         """
@@ -35,11 +40,17 @@ class HashTable:
         self.__size = size
         self.__buckets = [None] * size
 
+
+
+
     def __hash(self, key):
         """
         Takes a key which is a string and returns an integer which is the index that will be used to store the key/value pari in a Node at that index.
         """
         return sum([ord(char) for char in key]) * 7 % self.__size
+
+
+
 
     def add(self, key, value):
         """
@@ -81,7 +92,13 @@ class HashTable:
       # return None
       return None
 
+      """
+      create a method that called contains that take key and return T or F depend on index value
 
+      """
 
+    def contains(self, data_key):
 
-        
+      idx1 = self.__hash(data_key)
+
+      return True if self.__buckets[idx1] else False
