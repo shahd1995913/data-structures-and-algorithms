@@ -37,6 +37,9 @@ To run your tests
 | tree-fizz-buzz   | [tree-fizz-buzz ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/tree_fizz_buzz/) |
 trees/Breadth_First_Search) |
 | insertion_sort  | [insertion_sort ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/insertion_sort/BLOG) |
+| QuickSort  | [QuickSort](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/quicksort/) |
+
+
 
 
 
