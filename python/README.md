@@ -89,6 +89,7 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 | tree-fizz-buzz   | [tree-fizz-buzz ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/tree_fizz_buzz/) |
 | insertion_sort  | [insertion_sort ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/insertion_sort/BLOG) |
 | QuickSort  | [QuickSort](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/quicksort/) |
+| merge_sort  | [merge_sort ](https://shahd1995913.github.io/data-structures-and-algorithms/python/code_challenges/merge_sort/) |
 
 
 
