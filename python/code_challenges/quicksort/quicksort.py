@@ -1,3 +1,4 @@
+
 """
 write a function that called QuickSort that
 take aray of integer numbers
@@ -40,7 +41,3 @@ def Partition(arr, left,right):
     swap(arr, right, low +1)
 
     return(low + 1)
-
-
-
-

@@ -22,3 +22,6 @@
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 ### The result will be new tree with new values for node.
+
+
+## the pull requst : https://github.com/shahd1995913/data-structures-and-algorithms/pull/94

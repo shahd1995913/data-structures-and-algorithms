@@ -1,8 +1,9 @@
 """
-
-Write a function called repeated word that finds the first word to occur more than once in a string
-Arguments: string
-Return: string
+Write a function called left join
+Arguments: two hash maps
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+Return: The returned data structure that achieves the LEFT JOIN logic.
 
 """
 
@@ -10,7 +11,6 @@ Return: string
 The implementation of Node class, Linked list class, and Hashmap class.
 """
 
-import re
 
 class Node:
     def __init__(self, value=None, next_=None):
@@ -44,6 +44,7 @@ class HashTable:
     def __init__(self, size=1024):
         """
         Initalization of Hash table
+
         """
         self.__size = size
         self.__buckets = [None] * size
@@ -64,6 +65,7 @@ class HashTable:
         """
         A method for adding a new value to the map
         This method should hash the key, and add the key and value pair to the table.
+
         Arg: Takes the key and value
         Return : No return value
         """
@@ -78,6 +80,7 @@ class HashTable:
     def get(self, key):
       """
       Retrieve the most recent value of in oour hasmap for the given key
+
       :param key str
       :rvalue any
       """
@@ -100,6 +103,7 @@ class HashTable:
 
       """
       create a method that called contains that take key and return T or F depend on index value
+
       """
 
     def contains(self, data_key):
@@ -109,30 +113,19 @@ class HashTable:
       return True if self.__buckets[idx1] else False
 
 
-
-def hashmap_repeated_word(input_string):
     """
-Write a function called repeated word that finds the first word to occur more than
- once in a string
+Write a function called left join
 
-Arguments: string
 
-Return: string
+Arguments: two hash maps
+
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+
+Return: The returned data structure that achieves the LEFT JOIN logic.
 
 """
-
-
-    sentence = re.findall(r'\w+', input_string)
-
-
-    for char_repeted in sentence:
-
-
-        if sentence.count(char_repeted) > 1:
-
-
-            return char_repeted
-
 
 
 

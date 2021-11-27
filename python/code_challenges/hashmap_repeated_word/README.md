@@ -1,5 +1,6 @@
 # Challenge Summary
 <!-- Description of the challenge -->
+
 ## Write a function called repeated word that finds the first word to occur more than once in a string Arguments: string and Return: string
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
