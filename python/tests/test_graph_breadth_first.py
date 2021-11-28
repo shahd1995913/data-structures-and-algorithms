@@ -31,7 +31,7 @@ def test_BFS():
 
   obj.add_edge(g5,g1,10)
 
-  assert obj.test_BFS(g1) == [1,2,3,4,5]
+  assert obj.test_BFS(g1) == [1, 2, 3, 4, 5]
 
   assert obj.test_BFS(g2) == [2, 4, 1, 5, 3]
 
