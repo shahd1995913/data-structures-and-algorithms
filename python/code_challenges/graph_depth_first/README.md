@@ -16,4 +16,4 @@
 
 ## Solution
 
-![image5](graph_business_trip.jpg)
+![image5](graph_depth_first.jpg)
