@@ -183,8 +183,6 @@ class Graph():
 
         neibor = self._adjacency_list[node_graph[instance]]
 
-        print(neibor)
-
         for x in neibor:
 
           if node_graph[instance+1] == x[0]:
