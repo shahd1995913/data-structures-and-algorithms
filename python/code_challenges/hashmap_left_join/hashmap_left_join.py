@@ -41,6 +41,8 @@ class LinkedList:
 
 
 class HashTable:
+
+
     def __init__(self, size=1024):
         """
         Initalization of Hash table
@@ -48,6 +50,47 @@ class HashTable:
         """
         self.__size = size
         self.__buckets = [None] * size
+
+
+
+    """
+Write a function called left join
+
+
+Arguments: two hash maps
+
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+
+Return: The returned data structure that achieves the LEFT JOIN logic.
+
+"""
+
+    def hash_left_join(first_hash,socund_hash):
+
+        result = []
+
+        for i in first_hash.keys():
+
+            if i in socund_hash.keys():
+
+                result.append([i, first_hash.get(i), socund_hash.get(i)])
+
+            else:
+
+                result.append([i, first_hash.get(i), None])
+
+        for i in socund_hash.keys():
+
+            if i not in first_hash.keys():
+
+                result.append([i, None, socund_hash.get(i)])
+
+        return result
+
+
+
 
 
 
@@ -101,31 +144,7 @@ class HashTable:
       # return None
       return None
 
-      """
-      create a method that called contains that take key and return T or F depend on index value
 
-      """
-
-    def contains(self, data_key):
-
-      idx1 = self.__hash(data_key)
-
-      return True if self.__buckets[idx1] else False
-
-
-    """
-Write a function called left join
-
-
-Arguments: two hash maps
-
-The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
-
-The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
-
-Return: The returned data structure that achieves the LEFT JOIN logic.
-
-"""
 
 
 
