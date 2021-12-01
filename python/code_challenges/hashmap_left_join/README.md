@@ -9,10 +9,16 @@
 
 ## Challenge
 <!-- Description of the challenge -->
+## function that take a 2 hash table and return the matching value in key in both of hash table depend on the left join logic
+
+![image1](hashmap_left_join.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+## Time and Space complexity is O(n)
 ## Solution
 <!-- Embedded whiteboard image -->
+## I am tracing the code and it work correctly
+
+## It takes 4 hrs to finish
 
