@@ -1,8 +1,8 @@
 """
-Write a function called tree_intersection that
+
+Write a function called treeintersection that
 takes two binary trees as parameters.
- Using your Hashmap implementation as a part of your algorithm,
-  return a set of values found in both trees.
+ and  return a set of values found in both trees.
 
 """
 

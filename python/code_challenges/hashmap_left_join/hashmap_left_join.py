@@ -1,4 +1,13 @@
 """
+Write a function called left join
+Arguments: two hash maps
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+Return: The returned data structure that achieves the LEFT JOIN logic.
+
+"""
+
+"""
 The implementation of Node class, Linked list class, and Hashmap class.
 """
 
@@ -102,3 +111,22 @@ class HashTable:
       idx1 = self.__hash(data_key)
 
       return True if self.__buckets[idx1] else False
+
+
+    """
+Write a function called left join
+
+
+Arguments: two hash maps
+
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+
+Return: The returned data structure that achieves the LEFT JOIN logic.
+
+"""
+
+
+
+
