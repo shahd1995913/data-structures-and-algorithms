@@ -41,8 +41,16 @@ An empty graph properly returns null
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-## Time: O(1)
-## Space: O(1)
+1. add node: Time:O(1) space:O(1)
+
+2. add edge: Time:O(1) space:O(1)
+
+3. get nodes: Time:O(1) space:O(1)
+
+4. get neighbors: Time:O(1) space:O(1)
+
+5. size: Time:O(1) space:O(1)
+
 ## API
 <!-- Description of each method publicly available in your Graph -->
 1. add node : Add a node to the graph
