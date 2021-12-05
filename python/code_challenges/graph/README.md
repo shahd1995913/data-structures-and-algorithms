@@ -41,7 +41,7 @@ An empty graph properly returns null
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-## Time: O(1)
+## Time: O(n)
 ## Space: O(1)
 ## API
 <!-- Description of each method publicly available in your Graph -->
