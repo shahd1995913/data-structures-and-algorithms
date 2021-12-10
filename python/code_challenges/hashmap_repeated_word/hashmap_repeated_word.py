@@ -1,5 +1,4 @@
 """
-
 Write a function called repeated word that finds the first word to occur more than once in a string
 Arguments: string
 Return: string
@@ -121,19 +120,19 @@ Return: string
 
 """
 
+def hashmap_repeated_word(input_string):
+    procesed_string = re.sub(r'[^\w\s]','',input_string).lower().split(' ')
+    obj_hash_table = HashTable()
+    for word in procesed_string:
 
-    sentence = re.findall(r'\w+', input_string)
+        if obj_hash_table.contains(word):
 
+            return word
 
-    for char_repeted in sentence:
+        else:
 
-
-        if sentence.count(char_repeted) > 1:
-
-
-            return char_repeted
-
-
+            obj_hash_table.add(word,1)
+    return
 
 
 
