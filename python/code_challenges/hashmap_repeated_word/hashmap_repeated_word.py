@@ -110,17 +110,14 @@ class HashTable:
 
 
 def hashmap_repeated_word(input_string):
+
     """
 Write a function called repeated word that finds the first word to occur more than
  once in a string
 
-Arguments: string
-
-Return: string
+Arguments: string     and Return: string
 
 """
-
-def hashmap_repeated_word(input_string):
     procesed_string = re.sub(r'[^\w\s]','',input_string).lower().split(' ')
     obj_hash_table = HashTable()
     for word in procesed_string:
@@ -133,6 +130,7 @@ def hashmap_repeated_word(input_string):
 
             obj_hash_table.add(word,1)
     return
+
 
 
 
