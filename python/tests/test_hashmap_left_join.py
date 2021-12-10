@@ -1,28 +1,23 @@
-from   code_challenges.hashmap_left_join.hashmap_left_join import *
-
-from   code_challenges.hashmap_left_join.hashmap_left_join import HashTable , hash_left_join
+from   code_challenges.hashmap_left_join.hashmap_left_join import  HashTable , hash_left_join
 
 
 def test_hash_left_join():
 
-  first_hash = HashTable()
+  obj_hashtable1 = HashTable()
 
-  first_hash.add("fond", "enamored")
+  obj_hashtable1.add("fond", "enamored")
 
-  first_hash.add("wrath", "anger")
+  obj_hashtable1.add("wrath", "anger")
 
-  first_hash.add("guide", "usher")
+  obj_hashtable1.add("diligent", "employed")
 
-  scound_hash = HashTable()
+  obj_hashtable2 = HashTable()
 
-  scound_hash.add("fond", "averse")
+  obj_hashtable2.add("fond", "averse")
 
-  scound_hash.add("wrath", "delight")
+  obj_hashtable2.add("wrath", "delight")
 
-  scound_hash.add("guide", "follow")
+  obj_hashtable2.add("diligent", "idle")
 
-
-  scound_hash.add("flow", "jam")
-
-  assert (hash_left_join(first_hash,scound_hash)) == [['fond', 'enamored', 'averse'], ['guide', 'usher', 'follow'], ['wrath', 'anger', 'delight']]
-
+  assert (hash_left_join(obj_hashtable1,obj_hashtable2)) == [['fond', 'enamored', 'averse'], ['wrath', 'anger', 'delight'],
+['diligent', 'employed', 'idle']]
