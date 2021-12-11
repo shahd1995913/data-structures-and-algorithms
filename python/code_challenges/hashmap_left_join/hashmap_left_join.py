@@ -1,151 +1,100 @@
-"""
-Write a function called left join
-Arguments: two hash maps
-The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
-The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
-Return: The returned data structure that achieves the LEFT JOIN logic.
 
-"""
+class HashTable():
 
-"""
-The implementation of Node class, Linked list class, and Hashmap class.
-"""
+  def __init__(self ,size = 1024):
 
+    """initialization hash table"""
 
-class Node:
-    def __init__(self, value=None, next_=None):
-        """
-      Initalization the Node
-      """
-        self.value = value
-        self.next = next_
+    self.max = size
 
+    self.arr = [[] for i in range(self.max)]
 
+  def get_hash(self, key):
 
+    """function to return the hash value using ASCII code"""
 
-class LinkedList:
-    def __init__(self):
-        """
-        The constructor method for the linked list. Initializes the head of a linked list to None.
-        """
-        self.head = None
+    h = 0
 
-    def insert(self, value):
-        """
-        Take a value and store it in a Node, then insert it to the beginning of the linked list.
-        """
-        self.head = Node(value, self.head)
+    for char in key:
 
+        h += ord(char)
 
+    hash_index= h % self.max
 
+    return hash_index
 
+  def add(self ,key ,value):
 
-class HashTable:
+    """Function the store key value pairs in the key index of list"""
 
+    h = self.get_hash(key)
 
-    def __init__(self, size=1024):
-        """
-        Initalization of Hash table
+    found = False
 
-        """
-        self.__size = size
-        self.__buckets = [None] * size
+    for idx, element in enumerate(self.arr[h]):
+
+      if len(element)==2 and element[0] == key:
+
+          self.arr[h][idx] = (key,value)
+
+          found = True
+    if not found:
+
+      self.arr[h].append((key,value))
 
 
+  def get(self, key):
+      
+    """function that return the value stored in the key index"""
+
+    h = self.get_hash(key)
+
+    for element in self.arr[h]:
+
+
+      if element[0] == key:
+
+        return element[1] # return the value
+
+  def keys(self):
+    """function that return all keys in the hash table"""
+
+    keys = []
+
+    for element in self.arr:
+
+        for key in element:
+
+            keys.append(key[0])
+
+    return keys
+
+def hash_left_join(first_hash,socund_hash):
 
     """
 Write a function called left join
-
-
 Arguments: two hash maps
-
 The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
-
 The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
-
 Return: The returned data structure that achieves the LEFT JOIN logic.
-
 """
 
-    def hash_left_join(first_hash,socund_hash):
+    result = []
 
-        result = []
+    for i in first_hash.keys():
 
-        for i in first_hash.keys():
+        if i in socund_hash.keys():
 
-            if i in socund_hash.keys():
+            result.append([i, first_hash.get(i), socund_hash.get(i)])
 
-                result.append([i, first_hash.get(i), socund_hash.get(i)])
+        else:
 
-            else:
+            result.append([i, first_hash.get(i), None])
 
-                result.append([i, first_hash.get(i), None])
+    for i in socund_hash.keys():
 
-        for i in socund_hash.keys():
+        if i not in first_hash.keys():
 
-            if i not in first_hash.keys():
+            result.append([i, None, socund_hash.get(i)])
 
-                result.append([i, None, socund_hash.get(i)])
-
-        return result
-
-
-
-
-
-
-
-    def __hash(self, key):
-        """
-        Takes a key which is a string and returns an integer which is the index that will be used to store the key/value pari in a Node at that index.
-        """
-        return sum([ord(char) for char in key]) * 7 % self.__size
-
-
-
-
-    def add(self, key, value):
-        """
-        A method for adding a new value to the map
-        This method should hash the key, and add the key and value pair to the table.
-
-        Arg: Takes the key and value
-        Return : No return value
-        """
-
-        index = self.__hash(key)
-
-        if not self.__buckets[index]:
-          self.__buckets[index] = LinkedList()
-        my_value = [key,value]
-        self.__buckets[index].insert(my_value)
-
-    def get(self, key):
-      """
-      Retrieve the most recent value of in oour hasmap for the given key
-
-      :param key str
-      :rvalue any
-      """
-      # calculate index
-      index = self.__hash(key)
-      # check if there is a non empty bucket at the index
-      if self.__buckets[index]:
-        # iterate over linked list
-        linked_list = self.__buckets[index]
-        current = linked_list.head
-        while current:
-          # check if the key in each node matches
-          if current.value[0] == key:
-            # return the value of the node with the mathcing key
-            return current.value[1]
-          current = current.next
-
-      # return None
-      return None
-
-
-
-
-
-
+    return result
